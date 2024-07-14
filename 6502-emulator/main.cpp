@@ -1,11 +1,14 @@
 #include <iostream>
 #include "display.cpp"
+#include "cpu.cpp"
 
+CPU* cpu;
 Display* display;
 
 int main()
 {
-    display = new Display(800, 800);
+    cpu = new CPU();
+    display = new Display(256, 240);
     display->init();
     display->updateDisplay();
     display->killDisplay();

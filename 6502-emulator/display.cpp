@@ -12,7 +12,7 @@ public:
 
         pixels = new float4[width * height];
 
-        window = glfwCreateWindow(width, height, "6502", NULL, NULL);
+        window = glfwCreateWindow(width, height, "nes", NULL, NULL);
         if (!window)
         {
             glfwTerminate();
